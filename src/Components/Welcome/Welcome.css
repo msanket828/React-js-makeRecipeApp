@@ -1,0 +1,90 @@
+.welcome {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome__text{   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;  
+}
+
+.welcome__text h3{
+  font-size: 40px;  
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+  margin: 10px 0; 
+  text-align: center;
+  animation-name: bgColor;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite; 
+  animation-duration: 2s;
+  padding: 10px;   
+  width: 80%;     
+  transition: all .3s ease;
+  
+}
+
+@keyframes bgColor {
+  0% {
+    color: #000;               
+  }
+  100% {
+    width:100%;
+    color: #fff;
+    background: #f90;    
+  }
+}
+
+
+.welcome__text p {
+  padding: 10px 20px;
+  margin: 10px 0;
+  line-height: 25px;
+  text-align: center;  
+}
+
+.welcome__text> a {  
+  background: #000;
+  padding: 7px 20px;
+  color: #fff;
+  margin: 10px 0;
+  text-transform: uppercase;  
+  transition: all .2s ease;
+}
+
+
+.welcome__text>a:hover {
+  background: rgb(238, 187, 112);
+  color: #000;
+}
+
+.welcome__image {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.welcome__image>img{
+  text-align: center;  
+  width: 300px;
+  height: 300px;
+  animation: scaleUp;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;  
+  animation-direction: alternate;
+  transition: all .3s linear;
+}
+
+
+@keyframes scaleUp {
+  0% {
+    transform: translateY(0);    
+  }
+  100% {
+    transform: translateY(-10px);    
+  }
+}

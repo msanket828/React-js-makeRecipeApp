@@ -1,0 +1,2 @@
+(this.webpackJsonpstate=this.webpackJsonpstate||[]).push([[0],{10:function(e,t,n){"use strict";n.r(t);var a=n(0),c=n.n(a),r=n(2),o=n.n(r),s=n(3);n(9);var u=function(){var e=Object(a.useState)(0),t=Object(s.a)(e,2),n=t[0],r=t[1];return c.a.createElement("div",{className:"wrapper"},c.a.createElement("p",null,n),c.a.createElement("button",{onClick:function(){r(n+1)}},"Click me"))};o.a.render(c.a.createElement(u,null),document.getElementById("root"))},4:function(e,t,n){e.exports=n(10)},9:function(e,t,n){}},[[4,1,2]]]);
+//# sourceMappingURL=main.5d025585.chunk.js.map

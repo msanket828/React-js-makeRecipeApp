@@ -1,0 +1,60 @@
+.ul__recipe {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  grid-gap: 20px;  
+}
+
+.ul__recipe>li {
+  list-style: none;
+}
+
+.ul__recipe>li {      
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;    
+}
+
+.ul__recipe>li>h2{
+  width: fit-content;
+  background: #333;
+  font-weight: lighter;
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+li>p {
+  margin: 10px 0;  
+  line-height: 25px;
+  font-size: 17px;
+}
+
+li>p>strong {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #444;  
+}
+
+
+.controls {  
+  text-align: right;
+}
+
+
+.controls>.MuiSvgIcon_root {
+  margin: 0 10px;
+  background: #82ccdd;
+  padding: 5px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;   
+  transition: all .2s ease;  
+}
+
+.controls>.MuiSvgIcon_root:hover {
+  color: #f00;  
+  background: #000;
+}

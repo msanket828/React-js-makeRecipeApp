@@ -1,0 +1,38 @@
+.main_div {  
+  background: #000;
+  color: #fff;
+}
+
+a { text-decoration: none}
+
+.wrapper {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.logo {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+
+nav ul li{
+  vertical-align: top;
+  display: inline-block;
+  margin: 13px;
+}
+
+nav a {
+  color: inherit;
+  padding: 14px 5px 11px 5px;
+  border-bottom: 4px solid transparent;
+}
+
+nav a:hover {  
+  background: rgba(255,255,255,0.5);
+  border-bottom: 4px solid burlywood;
+}
+
