@@ -34,17 +34,11 @@ class Provider extends Component {
     })
   }
 
-  //reusable function
-  assignments = (a, b, c) => {
-    const RecipeName = a
-    const RecipeSteps = b
-    const RecipeIngredients = c
-  }
   submitRecipe = (e) => {
     e.preventDefault();
     if (this.state.recipeName !== "" && this.state.recipeSteps !== "" && this.state.recipeIngredients !== "") {
       const { recipeName, recipeSteps, recipeIngredients } = this.state;
-      this.assignments(recipeName, recipeSteps, recipeIngredients);
+     
       const obj = { name: recipeName, ingredients: recipeIngredients, steps: recipeSteps }
       this.setState({
         recipeDetail: [...this.state.recipeDetail, obj],
@@ -84,9 +78,6 @@ class Provider extends Component {
   handleUpdateSubmit = (e) => {
     e.preventDefault();
     const { recipeDetail, selectedIndex, updatedRecipeName, updatedRecipeSteps, updatedRecipeIngredients } = this.state;
-
-    this.assignments(updatedRecipeName, updatedRecipeIngredients, updatedRecipeSteps);
-
     const obj = { name: updatedRecipeName, ingredients: updatedRecipeIngredients, steps: updatedRecipeSteps }
     recipeDetail.splice(selectedIndex, 1, obj)
 
